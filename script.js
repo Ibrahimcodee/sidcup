@@ -7,6 +7,13 @@ document.addEventListener("mousemove", function (dets) {
   blur.style.left = dets.x - 250 + "px";
   blur.style.top = dets.y - 250 + "px";
 });
+var h1all = document.querySelectorAll(".card");
+h1all.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    crsr.style.scale = 2;
+    crsr.style.border = "1px solid #fff";
+    crsr.style.backgroundColor = "transparent";
+  });
 
 var h4all = document.querySelectorAll("#nav h4");
 h4all.forEach(function (elem) {
